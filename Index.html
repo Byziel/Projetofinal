@@ -1,47 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Side by Side </title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>zznews - Blog Pessoal</title>
+  <style>
+    body {
+      font-family: 'Fantasy', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #66b3ff, #b3d9ff, #e6f7ff); /* Gradiente de cores */
+      color: #333; /* Cor do texto principal */
+    }
+
+    header {
+      background: linear-gradient(to right, #005580, #003366); /* Gradiente de cores para o cabeçalho */
+      padding: 10px;
+      text-align: center;
+      color: #fff; /* Cor do texto no cabeçalho */
+    }
+
+    nav {
+      background: linear-gradient(to right, #003366, #001a33); /* Gradiente de cores para a barra de navegação */
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff; /* Cor do texto na barra de navegação */
+      padding: 10px;
+      margin: 5px;
+      border-radius: 5px;
+      background: linear-gradient(to right, #001a33, #003366); /* Gradiente de cores para os links na barra de navegação */
+      transition: all 0.3s ease; /* Transição suave */
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, #66b3ff, #b3d9ff, #e6f7ff); /* Mudança de gradiente ao passar o mouse */
+      color: #333; /* Mudança de cor do texto ao passar o mouse */
+    }
+
+    section {
+      padding: 20px;
+      background: #fff; /* Fundo branco para seções */
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para as seções */
+    }
+
+    footer {
+      background: linear-gradient(to right, #005580, #003366); /* Gradiente de cores para o rodapé */
+      padding: 10px;
+      text-align: center;
+      color: #fff; /* Cor do texto no rodapé */
+    }
+
+    .search-bar {
+      width: 80%;
+      padding: 10px;
+      margin: 10px auto;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+  </style>
 </head>
 <body>
-<div class="container">
-<div class="header">
-<h1><span>M</span>usic</h1>
-</div>
-<nav>
-    <ul>
-       <li><a href="#">Home</a></li>
-       <li><a href="#">TopList</a></li>
-       <li><a href="#">Product</a></li>
-       <li><a href="#">Contact</a></li>
-    </ul>
-</nav>
-</div>
-<div class="body-section">
-<div class="content">
-<h2>Reminder</h2>
-<p>The Weekend</p>
-<audio controls>
-<source src="song.mp3" type="audio/mp3">
-<audio>
-<div>
-<div class="image">
-<img src="ing.jpeg" width="300" height="300"> </div>
-</div>
 
-<div class="footex-box">
-<h4>Copyrights a 2023 The Weekend</h4>
-<div class="footer-ing">
-<img sre="spotify.png" width="30" height="30"> <img src="apple.png" width="30" height="30">
-<img src="wync.png" width="30" height="30">
-<img src="jio.png" width="30" height="30">
-</div>
-</div>
+  <header>
+    <h1>zznews - Blog Pessoal</h1>
+  </header>
 
+  <nav>
+    <a href="#galeria">Galeria</a>
+    <a href="#loja">Loja de Instrumentos</a>
+    <a href="#videos">Vídeos</a>
+    <a href="#quizzes">Quizzes</a>
+    <input type="text" class="search-bar" placeholder="Pesquisar...">
+  </nav>
 
+  <section id="galeria">
+    <h2>Galeria</h2>
+    <h3>Parágrafos</h3>
+    <p>Digite parágrafos sobre a galeria...</p>
+    <h3>Artigos</h3>
+    <p>Digite artigos sobre a galeria...</p>
+  </section>
+
+  <!-- Adicione seções semelhantes para Loja, Vídeos e Quizzes -->
+
+  <footer>
+    <p>&copy; 2023 zznews - Blog Pessoal. Todos os direitos reservados.</p>
+  </footer>
 
 </body>
 </html>
-
