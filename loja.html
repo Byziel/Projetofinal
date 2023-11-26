@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>zznews - Blog Pessoal</title>
+  <style>
+    body {
+      font-family: 'Fantasy', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #66b3ff, #b3d9ff, #e6f7ff);
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #005580, #003366);
+      padding: 10px;
+      text-align: center;
+      color: #fff;
+    }
+
+    nav {
+      background: linear-gradient(to right, #003366, #001a33);
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      padding: 10px;
+      margin: 5px;
+      border-radius: 5px;
+      background: linear-gradient(to right, #001a33, #003366);
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to right, #66b3ff, #b3d9ff, #e6f7ff);
+      color: #333;
+    }
+
+    section {
+      padding: 20px;
+      background: #fff;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .product {
+      margin-bottom: 20px;
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .product p {
+      margin: 10px 0;
+    }
+
+    footer {
+      background: linear-gradient(to right, #005580, #003366);
+      padding: 10px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .search-bar {
+      width: 80%;
+      padding: 10px;
+      margin: 10px auto;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .payment-option {
+      background: linear-gradient(to right, #003366, #001a33);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .payment-form {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>zznews - Blog Pessoal</h1>
+  </header>
+
+  <nav>
+    <a href="#galeria">Galeria</a>
+    <a href="#loja">Loja de Instrumentos</a>
+    <a href="#videos">Vídeos</a>
+    <a href="#quizzes">Quizzes</a>
+    <input type="text" class="search-bar" placeholder="Pesquisar...">
+  </nav>
+
+  <section id="galeria">
+    <h2>Galeria</h2>
+
+    <div class="product">
+      <img src="caminho_para_imagem1.jpg" alt="Produto 1">
+      <p><strong>Produto 1</strong></p>
+      <p>Descrição do Produto 1.</p>
+      <p style="color: red;">R$ 100,00</p>
+    </div>
+
+    <!-- Adicione mais produtos conforme necessário -->
+
+  </section>
+
+  <footer>
+    <p>&copy; 2023 zznews - Blog Pessoal. Todos os direitos reservados.</p>
+  </footer>
+
+  <div class="payment-option">
+    <p>Chave Pix: by.jzielsantos@gmail.com</p>
+    <div class="payment-form">
+      <label for="productName">Nome do Produto:</label>
+      <input type="text" id="productName" name="productName" required>
+
+      <label for="productValue">Valor:</label>
+      <input type="number" id="productValue" name="productValue" required>
+
+      <button>Enviar Pagamento</button>
+    </div>
+  </div>
+
+</body>
+</html>
