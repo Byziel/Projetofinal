@@ -3,26 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
+    <title>Pet Shop Fofinho</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #fff;
-            color: #000;
+            background: linear-gradient(to bottom, #ff66b2, #b366ff, #4d4d4d);
+            color: #fff;
         }
 
         header {
-            background-color: #000;
+            background-color: #333;
             color: #fff;
             text-align: center;
             padding: 1em 0;
         }
 
+        nav {
+            margin-top: 10px;
+        }
+
         nav ul {
             list-style: none;
             padding: 0;
+            text-align: center;
         }
 
         nav li {
@@ -34,61 +39,82 @@
             text-decoration: none;
             color: #fff;
             font-weight: bold;
+            font-size: 1.2em;
         }
 
-        .search-bar {
-            margin-top: 20px;
-        }
-
-        .search-bar input {
-            padding: 5px;
-            background-color: #fff;
-            color: #000;
-            border: 1px solid #000;
-        }
-
-        .search-bar button {
-            padding: 5px 10px;
-            background-color: #000;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
-
-        .bio-section {
+        .animal-section {
             text-align: center;
             padding: 20px;
         }
 
-        .bio-section img {
+        .animal-section img {
             max-width: 100%;
-            border-radius: 50%;
+            border-radius: 10px;
             margin-bottom: 20px;
+        }
+
+        .contact-section {
+            text-align: center;
+            padding: 20px;
+        }
+
+        form {
+            display: inline-block;
+            text-align: left;
+        }
+
+        input, textarea {
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            font-size: 1em;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Nome do Indivíduo</h1>
+        <h1>Pet Shop Fofinho</h1>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Portfólio</a></li>
+                <li><a href="#">Animais</a></li>
+                <li><a href="#">Raças</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
         </nav>
-        <div class="search-bar">
-            <input type="text" placeholder="Pesquisar...">
-            <button type="button">Buscar</button>
-        </div>
     </header>
 
-    <section class="bio-section">
-        <img src="profile-image.jpg" alt="Imagem do Indivíduo">
+    <section class="animal-section">
+        <h2>Nossos Amiguinhos</h2>
+        <img src="cachorro.jpg" alt="Cachorro Fofinho">
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida semper urna, et varius elit bibendum vel.
-            Vestibulum euismod, libero ac mattis semper, augue libero tincidunt arcu, ut laoreet dolor justo at tellus.
+            Conheça nossos adoráveis animais de estimação. Eles estão ansiosos para fazer novos amigos!
         </p>
+    </section>
+
+    <section class="contact-section">
+        <h2>Fale Conosco</h2>
+        <form>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
     </section>
 </body>
 </html>
